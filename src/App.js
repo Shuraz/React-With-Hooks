@@ -3,7 +3,6 @@ import './App.css';
 import ForEachTest from './condition_Loop/ForEachTest';
 import ForLoopTest from './condition_Loop/ForLoopTest';
 import FilterTest from './condition_Loop/FilterTest';
-import ReducerTest from './condition_Loop/ReducerTest';
 import IfElseTest from './condition_Loop/IfElseTest';
 import IfElseTest2 from './condition_Loop/IfElseTest2';
 import IfElseText1 from './condition_Loop/IfElseText1';
@@ -27,6 +26,7 @@ import Reducer1 from './reducer/Reducer1'
 import Reducer2 from './reducer/Reducer2'
 import MyApp from './Task/MyApp';
 import Pagenate from './page/Pagenate';
+import ReducerApp from './reducer/withSwitch/ReducerTest';
 function App() {
   return (
     <div>
@@ -56,7 +56,8 @@ function App() {
       {/* <Reducer1/> */}
       {/* <Reducer2/> */}
       {/* <MyApp/> */}
-      <Pagenate/>
+      {/* <Pagenate/> */}
+      <ReducerApp/>
     </div>
   );
 }
