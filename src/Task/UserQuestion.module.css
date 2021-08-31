@@ -1,0 +1,138 @@
+
+article{
+   padding-bottom: 2px;
+  text-align: center; 
+}
+
+.flexcontainer{
+  display: -webkit-flex;
+  display: flex;
+
+}
+/* Create three equal columns that sits next to each other */
+.flexleft{
+    -webkit-flex: 0.5;
+     -ms-flex: 0.5;
+      flex: 0.5;
+      padding: 2px;
+     border-bottom: 1px solid #e9e9e9;
+     border-right:1px solid #e9e9e9;
+     margin: 0px;
+      text-align: center;
+      color:#e4853d;
+      font-size:xx-large;
+
+} 
+.flexcenter{
+    -webkit-flex: 2;
+     -ms-flex: 2;
+      flex: 2;
+        display: flex;
+      flex-direction: column;
+      padding: 2px;
+       margin: 0px;
+     border-bottom: 1px solid #e9e9e9;
+      text-align: center;
+
+}
+.flexright{
+    -webkit-flex: 1;
+     -ms-flex: 1;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2px;
+       margin: 0px;
+     border-bottom: 1px solid #e9e9e9;
+      text-align: center;
+
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .flexcontainer {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  
+  }
+  .flexleft{
+    border-right: none;
+  }
+}
+
+
+.orangebox{
+  border: 1px solid #edac7c;
+  margin: 15px 2px 0 ;
+  border-radius: 4px;
+  padding: 5px;
+
+}
+
+.graybox{
+  margin: 15px 2px 0 ;
+  border:1px solid #b7b7b7;
+  border-radius: 4px;
+    padding: 5px;
+}
+
+.orangebgbox h5{
+  border: 1px solid #edac7c;
+  padding: 5px 50px;
+  color: #010101;
+  background-color:#fcf1eb;
+  border-radius: 4px;
+}
+
+
+.flexrowcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexrowcontainer > div {
+  margin:5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+
+
+}
+
+.highlight {
+  background-color: #b7b7b7;
+  padding: 5px 10px;
+}
+
+.mainbox{
+  border:1px solid #b7b7b7;
+  border-radius: 4px;
+  position: relative;
+}
+
+.ownerlable{
+  position: absolute;
+  background-color: #e4853d;
+  font-size: 12px;
+  color: white;
+  padding: 2px;
+  top:10px;
+  left: -10px;
+}
+.avatar {
+  padding: 5px;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.verticalline{
+ 
+  margin: 15px 0;
+ width:1px;
+ height:50px;
+ background-color:#b7b7b7;
+}

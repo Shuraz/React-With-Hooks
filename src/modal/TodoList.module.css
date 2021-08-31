@@ -1,0 +1,17 @@
+.card{
+
+    background-color: coral;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5%;
+    border:5px solid rgb(138, 13, 13);
+}
+
+button{
+    justify-content: center;
+    text-align: center;
+    background-color: violet;
+    padding: 5px 10px;
+
+}
