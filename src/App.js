@@ -27,6 +27,11 @@ import Reducer2 from './reducer/Reducer2'
 import MyApp from './Task/MyApp';
 import Pagenate from './page/Pagenate';
 import ReducerApp from './reducer/withSwitch/ReducerTest';
+import GetAxios from './axios/GetAxios';
+import JsonTest from './json/JsonTest';
+import PostAxios from './axios/PostAxios';
+import GetAxios_inObj from './axios/GetAxios_inObj';
+import MultipleRequest from './axios/MultipleRequest';
 function App() {
   return (
     <div>
@@ -57,7 +62,12 @@ function App() {
       {/* <Reducer2/> */}
       {/* <MyApp/> */}
       {/* <Pagenate/> */}
-      <ReducerApp/>
+      {/* <ReducerApp/> */}
+      {/* <JsonTest/> */}
+      {/* <GetAxios/> */}
+      {/* <PostAxios/> */}
+      {/* <GetAxios_inObj/> */}
+      <MultipleRequest/>
     </div>
   );
 }

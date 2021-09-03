@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Emp{
+            //initilaizing the object
+            constructor(id,name, age){
+                this.id=id;
+                this.name=name;
+                this.age=age;
+            }
+            //method declare
+            printDetail(){
+                document.write(this.id +"  "+this.name+"  "+this.age);
+            }
+
+        }
+        class Department extends Emp{
+            constructor(id,name,age,dname, budget){
+                super(id,name,age);
+                this.dname=dname;
+                this.budget=budget;
+            }
+            printDepartDetail(){
+                document.writeln(this.id+ " "+this.name+"  "+this.age+" "+this.dname+" "+this.budget);
+            }    
+        }
+
+        var e1= new Emp(1,"Suraj",30);
+        // e1.printDetail();
+
+        var dpt1= new Department(1,"Suraj",30,"Fete",4333);
+        dpt1.printDepartDetail();
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const intro={
+        //     name:"Suraj",
+        //     surname:"Pokhrel",
+        //     address:"Granville",
+        //     fullname:function(){
+        //         return(this.name+ " "+this.surname);
+        //     }
+
+        // }
+        // document.writeln(intro.fullname());
+
+        const intro={
+            fullname:function(){
+                return(this.name+" "+this.surname);
+            }
+        }
+        const per1={
+            name:"Suraj",
+          surname:"Pokhrel",
+        }
+        document.writeln(intro.fullname.call(per1));
+
+    </script>
+</body>
+</html>

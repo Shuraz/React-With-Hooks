@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+// Initiate counter
+// let counter = 0;
+
+// Function to increment counter
+// const add = (function () {
+//   let counter = 0;
+//   return function () {counter += 1; return counter}
+// })();
+// //  const add=(()=>{
+// //     let counter=0;
+// //     counter+=1;
+// //     return counter;
+// //  })
+// function myFunction(){
+//     document.getElementById("demo").innerHTML = add();
+// }
+(function(){
+    console.log("hello self invoking function");
+})();
+
+!function(){
+    console.log("auto function");
+}();
+
+
+// Call add() 3 times
+// add();
+// add();
+// add();
+
+// // The result is not 3 because you mix up the globaland local counter
+// document.getElementById("demo").innerHTML = "The counter is: " + counter;
+</script>
+    
+</body>
+</html>

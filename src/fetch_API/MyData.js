@@ -13,10 +13,12 @@ function MyData() {
             }
             return response.json();
         
-        }).then(data=>{
+        })
+        .then(data=>{
             // console.log(data.data);
             setUsers(data.data);
-        }).catch(error=>{
+        })
+        .catch(error=>{
             console.log(error);
         })
     }

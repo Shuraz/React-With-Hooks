@@ -6,7 +6,8 @@ function AxiosTest() {
     const [urlData, seturlData] = useState([])
      
     const getData=()=>{
-        axios.get(url).then((resp)=>{
+        axios.get(url)
+        .then((resp)=>{
             console.log(resp)
             seturlData(resp.data);
         })

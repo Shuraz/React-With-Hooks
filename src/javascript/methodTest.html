@@ -25,6 +25,33 @@
     const val = [1,2,3,4,5,6];
     const[,,,,a,b]=val;
     console.log(a)
+
+
+    function getGrade(score) {
+    let grade;
+    // Write your code here
+    if(25<grade<=30){
+        grade='A';
+    }
+    else if(20<grade<=25){
+        grade='B';
+    }
+    else if(15<grade<=20){
+        grade='C';
+    }
+    else if(10<grade<=15){
+        grade='D';
+    }
+   else if(5<grade<=10){
+        grade='E';
+    }
+   else if(0<grade<=5){
+        grade='F'
+    }
+    return grade;
+
+    console.log(getGrade(11));
+}
     </script>
     
 </body>
