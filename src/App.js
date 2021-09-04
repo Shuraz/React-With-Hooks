@@ -32,9 +32,13 @@ import JsonTest from './json/JsonTest';
 import PostAxios from './axios/PostAxios';
 import GetAxios_inObj from './axios/GetAxios_inObj';
 import MultipleRequest from './axios/MultipleRequest';
+import Looping1 from './condition_Loop/looping_in array/Looping1';
+import Looping2 from './condition_Loop/looping_in_obj/Looping2';
 function App() {
   return (
     <div>
+      {/* <Looping1/> */}
+      <Looping2/>
       {/* <ForEachTest/> */}
       {/* <ForLoopTest/> */}
       {/* <FilterTest/> */}
@@ -67,7 +71,7 @@ function App() {
       {/* <GetAxios/> */}
       {/* <PostAxios/> */}
       {/* <GetAxios_inObj/> */}
-      <MultipleRequest/>
+      {/* <MultipleRequest/> */}
     </div>
   );
 }
