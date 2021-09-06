@@ -47,9 +47,7 @@ function Pagenate() {
             nextLabel={"Next"}
             pageCount={pageCount}
             onPageChange={pageChangeHold}
-             
-             
-            />
+             />
         </div>
     );
 }
