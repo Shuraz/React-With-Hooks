@@ -1,47 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
+    <button onclick="myfunction()">click to add</button>
+    <h1 id="demovalue"></h1>
+    <script>
+        // Initiate counter
+        // let counter = 0;
 
-<script>
-// Initiate counter
-// let counter = 0;
+        // Function to increment counter
+        // const add = (function () {
+        //   let counter = 0;
+        //   return function () {counter += 1; return counter}
+        // })();
+        // //  const add=(()=>{
+        // //     let counter=0;
+        // //     counter+=1;
+        // //     return counter;
+        // //  })
+        // function myFunction(){
+        //     document.getElementById("demo").innerHTML = add();
+        // }
+        (function () {
+            console.log("hello self invoking function");
+        })();
 
-// Function to increment counter
-// const add = (function () {
-//   let counter = 0;
-//   return function () {counter += 1; return counter}
-// })();
-// //  const add=(()=>{
-// //     let counter=0;
-// //     counter+=1;
-// //     return counter;
-// //  })
-// function myFunction(){
-//     document.getElementById("demo").innerHTML = add();
-// }
-(function(){
-    console.log("hello self invoking function");
-})();
+        ! function () {
+            console.log("auto function");
+        }();
+        const dfun=()=>{
+            let counter = 0;
+            return function () {
+                console.log(counter)
+                counter += 1;
+                return counter
+            }
+        }
+        // Javascript closure
+        const d= (function () { 
+            let counter = 0;
+            return function () {
+                console.log(counter)
+                counter += 1;
+                return counter
+            }
+        })();
+        // console.log(d());
+        function myfunction(){
+            document.getElementById("demovalue").innerHTML=d();
+        }
 
-!function(){
-    console.log("auto function");
-}();
+        console.log(Math.max(1,5,4,6));
+        console.log(Math.min(2,4,5,3));
+        // console.log(Math.max[13,4,5,5,3]); NaN
+        {
+            let x=[12,31,4,5,6];
+            console.log(Math.max(...x));
+            console.log(x);
+            let x1=[...x];
+            console.log(...x1);
+            console.log(...x)
+            var name ="Suraj";
+            console.log(...name)
+        }
+        // document.getElementById("demobut").innerHTML=
+        // Call add() 3 times
+        // add();
+        // add();
+        // add();
 
+        // // The result is not 3 because you mix up the globaland local counter
+        // document.getElementById("demo").innerHTML = "The counter is: " + counter;
+    </script>
 
-// Call add() 3 times
-// add();
-// add();
-// add();
-
-// // The result is not 3 because you mix up the globaland local counter
-// document.getElementById("demo").innerHTML = "The counter is: " + counter;
-</script>
-    
 </body>
+
 </html>

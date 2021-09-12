@@ -17,14 +17,16 @@ function Reducer1() {
   console.log(People);
         }
         else{
+            console.log(Boolean(Name));
             setShowModel(!ShowModel);
         }
 
     }
+    const closeModel=()=>setShowModel(!ShowModel)
     return (
         <div> 
                 <h1>Using Reducer</h1> 
-                {ShowModel && <Model/>}
+                {ShowModel && <Model closeModel={closeModel} modelContent="I have a message"/>}
                 <form onSubmit={handleSubmit}>
                     <input type="text" onChange={(e)=>{ setName(e.target.value) }} value={Name}/>
                     <button type='submit'>Add it</button>

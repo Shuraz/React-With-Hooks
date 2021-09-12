@@ -35,11 +35,21 @@ import MultipleRequest from './axios/MultipleRequest';
 import Looping1 from './condition_Loop/looping_in array/Looping1';
 import Looping2 from './condition_Loop/looping_in_obj/Looping2';
 import PageApp from './page/paginate/PageApp';
+import DataInputs from './forwarRef/Inputs/DataInputs';
+import DataInputsRef from './forwarRef/Inputs/DataInputsRef';
+import EgImperative from './useImperativeHandle/EgImperative';
+import AppOpti from './optimization/case/AppOpti';
+import UpdateJSON from './updatingJSON/UpdateJSON';
+import Looping3 from './condition_Loop/looping_in_obj/Looping3';
+import UpdateReducer from './updatingJSON/UpdateReducer';
+import EmployeDetail from './state_transfer/CTP2/EmployeDetail';
+import NameDisplay from './useRef/NameDisplay';
 function App() {
   return (
     <div>
       {/* <Looping1/> */}
       {/* <Looping2/> */}
+      {/* <Looping3/> */}
       {/* <ForEachTest/> */}
       {/* <ForLoopTest/> */}
       {/* <FilterTest/> */}
@@ -73,7 +83,15 @@ function App() {
       {/* <PostAxios/> */}
       {/* <GetAxios_inObj/> */}
       {/* <MultipleRequest/> */}
-      <PageApp/>
+      {/* <PageApp/> */}
+      {/* <DataInputs/> */}
+      {/* <DataInputsRef/> */}
+      <EgImperative/> 
+      {/* <AppOpti/> */}
+      {/* <UpdateJSON/> */}
+      {/* <UpdateReducer/> */}
+      {/* <EmployeDetail/> */}
+      {/* <NameDisplay/> */}
     </div>
   );
 }

@@ -6,14 +6,15 @@ import {reducer} from './reducer'
 
 function Reducer2() {
     const initialState={
-        people:[],
+        people:data,
+        //people:[]
         isModelOpen:false,
         modelContent:''
     }
     
     const [state, dispatch] = useReducer(reducer, initialState);
     const [Name, setName] = useState('');
-
+    console.log(state.people)
     const handleFormSubmit=(e)=>{
         e.preventDefault();
         if(Name){

@@ -39,7 +39,6 @@ function Opti2() {
     )
 }   
 
-
  const BigList= React.memo(({products, addToCart})=> {
     useEffect(()=>{
     console.count(` ....biglist calling`);
