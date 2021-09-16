@@ -44,6 +44,9 @@ import Looping3 from './condition_Loop/looping_in_obj/Looping3';
 import UpdateReducer from './updatingJSON/UpdateReducer';
 import EmployeDetail from './state_transfer/CTP2/EmployeDetail';
 import NameDisplay from './useRef/NameDisplay';
+import GetComponent from './axios/axios2/GetComponent';
+import MultiComplex from './axios/axios2/MultiComplex';
+import GraphqlApp from './graphql/GraphqlApp';
 function App() {
   return (
     <div>
@@ -86,12 +89,15 @@ function App() {
       {/* <PageApp/> */}
       {/* <DataInputs/> */}
       {/* <DataInputsRef/> */}
-      <EgImperative/> 
+      {/* <EgImperative/>  */}
       {/* <AppOpti/> */}
       {/* <UpdateJSON/> */}
       {/* <UpdateReducer/> */}
       {/* <EmployeDetail/> */}
       {/* <NameDisplay/> */}
+    {/* <GetComponent/> */}
+      {/* <MultiComplex/> */}
+      <GraphqlApp/>
     </div>
   );
 }

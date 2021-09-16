@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Counter1 from './Counter1'
 import Counter2 from './Counter2'
-//while updating state 1 value, Counter 1 is rendered unnecessarily, so memo function come to in action here, use case.
+//while updating state1 value, Counter1 is rendered unnecessarily, so memo function come to in action here, use case.
 // React.memo only checks for prop changes. 
 // If your function component wrapped in React.memo has a `useState`, `useReducer` or `useContext Hook` in its implementation,
 //  it will still rerender when state or context change.

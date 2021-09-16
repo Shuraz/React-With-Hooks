@@ -43,8 +43,10 @@
                 return counter
             }
         }
+        const test=dfun();
+        console.log(test);
         // Javascript closure
-        const d= (function () { 
+        const d= (()=> { 
             let counter = 0;
             return function () {
                 console.log(counter)

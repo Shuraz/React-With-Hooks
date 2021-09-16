@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const isGreater=(a,b)=>{
+            return new Promise((resolve1, reject1)=>{
+                if(a>b){
+                    return resolve1(true);
+                }
+                else{
+                    return reject1("reject value"+false);
+                }
+            })
+        }
+        isGreater(4,13)
+        .then((res)=>{
+            console.log('is greater....')
+        })
+        .catch((res)=>{
+            console.log(res)
+        })
+    </script>
+</body>
+</html>

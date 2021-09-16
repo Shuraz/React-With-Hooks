@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <button onclick="myfunction()">click here</button>
+    <script>
+        //revealing module pattern ; to achieve encapsulation and reveal variables and methods return in object literal.
+
+        const ModulePattern = (() => {
+            let privateValue = 20;
+
+            const methodOne = () => {
+                console.log("inside a private methpod");
+                return privateValue++;
+            }
+            const methodTwo = () => {
+                console.log("this method i want to expose");
+            }
+            const methodThree = () => {
+                methodOne();
+            }
+            const methodFour = () => {
+                console.log("will not expose this.")
+            }
+            return {
+                first: methodOne,
+                second: methodTwo,
+                third: methodThree
+            }
+
+        })();
+
+        ModulePattern.first();
+        ModulePattern.second();
+        ModulePattern.third();
+
+        const myfunction=()=>{
+            document.getElementById("demo").innerHTML=ModulePattern.first()
+        }
+    </script>
+</body>
+
+</html>
