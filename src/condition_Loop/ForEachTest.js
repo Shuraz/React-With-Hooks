@@ -9,7 +9,18 @@ function ForEachTest() {
     })
     return (
         <div>   
+            <h1>ForEach</h1>
             {list}
+            {console.log(products)}
+            {/* {
+               products.forEach((value, key)=>{
+                return(
+                    <div>
+                        {key}:{value}
+                    </div>
+                )
+               })
+            } */}
         </div>
     )
 }

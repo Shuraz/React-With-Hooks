@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        const fruits = new Map([
+            ['a',50],
+            ['b',100],
+            ['c',150],
+        ])
+        console.log(`a: `+fruits.get('a'));
+        fruits.set('d',200);
+        fruits.set(3,"500")
+        fruits.delete('a');
+        if(fruits.has('c')){
+            console.log(fruits);
+        }
+        fruits.forEach((key,value)=>{
+            console.log(key+":"+value);
+        })
+        for(const [key, value] of fruits.entries()){
+            console.log(key+":"+value)
+        }
+        const fruit00=[3,4,45,145,42]
+        fruit00.map((item)=>{
+            console.log(item)
+        })
+    </script>
+</body>
+</html>

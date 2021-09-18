@@ -47,6 +47,9 @@ import NameDisplay from './useRef/NameDisplay';
 import GetComponent from './axios/axios2/GetComponent';
 import MultiComplex from './axios/axios2/MultiComplex';
 import GraphqlApp from './graphql/GraphqlApp';
+import DataFetch from './HOC/hoc_case1/DataFetch';
+import ProtectedComponent from './HOC/hoc_case1/hoc_case2/ProtectedComponent';
+import WeatherApp from './graphql/weatherApp/WeatherApp';
 function App() {
   return (
     <div>
@@ -97,7 +100,10 @@ function App() {
       {/* <NameDisplay/> */}
     {/* <GetComponent/> */}
       {/* <MultiComplex/> */}
-      <GraphqlApp/>
+      {/* <GraphqlApp/> */}
+  {/* <DataFetch/> */}
+      {/* <ProtectedComponent/> */}
+      <WeatherApp/>
     </div>
   );
 }

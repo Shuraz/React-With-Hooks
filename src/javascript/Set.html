@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //myData.values(); // Returns [object Set Iterator]
+        const myData = new Set([1,2,3,4,5,5,4,3,2,1])
+        console.log(myData);
+
+        let i=0;
+        for(const x of myData.values()){
+            console.log('tst')
+            console.log(`myData ${i+=1}: ${x}`);
+            // console.log(x);
+        }
+
+        //challenge to make i as private vaue.
+        const printValue=(()=>{
+            let i=0;
+            return function privateFunction(){
+                for(const y of myData.values()){
+                    console.log(`myData ${i+=1}: ${y}`);
+                }
+            }
+        })();
+        printValue();
+    </script>
+</body>
+</html>

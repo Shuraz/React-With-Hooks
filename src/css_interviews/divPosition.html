@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .bigBox {
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* justify-items: center; */
+            /* position: relative; */
+            height: 50vh;
+            width: 50vw;
+            background-color: gray;
+        }
+
+        .smallBox {
+            /* position: absolute; */
+            height: 25vh;
+            width: 25vw;
+            background-color: green;
+        }
+
+        .mainBox{
+            position: relative;
+            background-color: hotpink;
+            height: 50vh;
+            width: 50vw;
+
+        }
+        .innerBox{
+            top: 50%;
+            left: 50%;
+            /* border-radius: 100%; */
+            transform: translate(-50%,-50%);
+            position:absolute;
+            background-color:honeydew;
+            height: 30vh;
+            width: 30vw;
+        }
+        .middleScreen{
+            position: absolute;
+             /* display: flex;
+            align-items: center;
+            justify-content: center; */
+             left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            background-color: indianred;
+            height: 50vh;
+            width: 50vw;
+           
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- case 1 -->
+    <!-- <div class="bigBox">
+        <div class="smallBox">
+        </div>
+    </div> -->
+
+    <!-- case 2 -->
+    <!-- <div class="mainBox">
+        <div class="innerBox">
+
+        </div>
+    </div> -->
+
+    <!-- case 3 -->
+    <div class="middleScreen">
+        <p>hello</p>
+    </div>
+</body>
+
+</html>
