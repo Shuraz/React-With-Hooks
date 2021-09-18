@@ -17,7 +17,7 @@ function GraphqlApp() {
     return (
         <div>
            <ApolloProvider client={client}>
-            <Router>
+            <Router> 
                 <Switch>
                     <Route path="/" exact component={Home}></Route>
                     <Route path="/search" exact component={Search}></Route>
