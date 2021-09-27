@@ -1,0 +1,14 @@
+@import './varilables';
+
+.mainPage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h1{
+        color: $successcolor;
+    }
+}
+
+button{
+    @include buttonStyle($dangercolor,$textcolor);
+}

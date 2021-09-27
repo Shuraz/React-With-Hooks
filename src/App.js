@@ -55,6 +55,7 @@ import Movies from './movie/Movies'
 import MovieApp from './movie/MovieApp';
 import Unsplash from './unsplash_photo_API/Unsplash';
 import FirebaseApp from './firebaseLogin/FirebaseApp';
+import SassApp from './Sass App/SassApp';
 
 function App() {
   return (
@@ -115,7 +116,8 @@ function App() {
       {/* <Navbar/> */}
 {/* <MovieApp/> */}
 {/* <Unsplash/> */}
-<FirebaseApp/>
+{/* <FirebaseApp/> */}
+<SassApp/>
     </div>
   );
 }

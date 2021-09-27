@@ -1,0 +1,13 @@
+$background:black;
+$textcolor:white;
+$dangercolor:red;
+$successcolor:green;
+
+@mixin buttonStyle( $backgroundcolor,$color) {
+    background-color: $backgroundcolor;
+    color: $color;
+    border-radius: 5px;
+    padding: 4px 6px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
