@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getLetter(s) {
+            let letter;
+            // Write your code here
+            switch (true) {
+                case 'aeiou'.includes(s[0]):
+                    letter = 'A';
+                    break;
+                case 'bcdfg'.includes(s[0]):
+                    letter = 'B';
+                    break;
+                case 'hjklm'.includes(s[0]):
+                    letter = 'C';
+                    break;
+                case 'npqrstvwxyz'.includes(s[0]):
+                    letter = 'D';
+                    break;
+                default:
+                    letter: 'Mismatch!!!'
+            }
+            return letter;
+        }
+        getLetter("zwxya");
+
+        const myData = (s) => {
+            // try {
+            //     let a = s.split("");
+            //     let b = a.reverse();
+            //     let c = b.join("");
+            //     return c;
+            // } catch (err) {
+            //     console.log(err.message);
+            // }
+    try {
+        s = s.split("").reverse().join("");
+    } catch(e) {
+        console.log(e.message);
+    } finally {
+        console.log(s);
+    }
+
+        }
+        console.log(myData("4324234"));
+        //throw 
+        function isPositive(a) {
+    if(a>0){
+        return "YES";
+    }
+    else{
+       throw (a===0? new Error ("Zero Error"): new Error ("Negative Error"))
+    }
+    
+}
+    </script>
+</body>
+
+</html>

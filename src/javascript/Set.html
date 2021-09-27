@@ -28,7 +28,100 @@
                 }
             }
         })();
+  
         printValue();
+
+        {
+            let x="hello";
+            let y=34;
+            let z=undefined;
+            console.log(z && x);
+            console.log(typeof(BigInt));
+        }
+
+        {
+            const highOrderFunction=()=>{
+                return function(){
+                    return "do someting";
+                }
+            }
+            const x=highOrderFunction();
+            console.log(x());
+        }
+{
+    var obj = {
+    name:  "vivek",
+    getName: function(){
+    console.log(this.name);
+  }
+        
+}
+objz={name:"mohan"}
+console.log(obj.getName.call(objz))
+   
+}
+        var obj = {
+    name:  "vivek",
+    getName: ()=>{
+    console.log(this.name);
+  }
+        
+}
+objz={name:"mohan"}
+console.log(obj.getName.call(objz))
+        
+{
+    var obj1 = {
+    address : "Mumbai,India",
+    getAddress: function(){
+    console.log(this.address); 
+  }
+}
+       
+var getAddress = obj1.getAddress;
+var obj2 = {address:"akshay",getAddress};
+obj2.getAddress(); 
+}
+
+{
+
+    var website = {
+  name: "Javatpoint",
+  getName: function() {
+    return this.name;
+  }
+}
+var unboundGetName = website.getName;
+console.log(website.getName())
+var boundGetName = unboundGetName.bind(website);
+document.writeln(boundGetName());
+}
+
+
+{
+    const map1 = new Map();
+map1.set('Value', 1);
+
+const map2 = new WeakMap();
+//map2.set('Value', 2); // Throws an error
+
+let obj = {name:"Vivek"};
+const map3 = new WeakMap();
+map3.set(obj, {age:23});
+}
+console.log("2"-2+"-2");
+
+var x = 23;
+
+(function(){
+  var x = 43;
+  (function random(){
+      console.log(x);
+    x++;
+    console.log(x);
+    var x = 21;
+  })();
+})();
     </script>
 </body>
 </html>

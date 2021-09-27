@@ -50,6 +50,12 @@ import GraphqlApp from './graphql/GraphqlApp';
 import DataFetch from './HOC/hoc_case1/DataFetch';
 import ProtectedComponent from './HOC/hoc_case1/hoc_case2/ProtectedComponent';
 import WeatherApp from './graphql/weatherApp/WeatherApp';
+import Navbar from './navbar/Navbar'
+import Movies from './movie/Movies'
+import MovieApp from './movie/MovieApp';
+import Unsplash from './unsplash_photo_API/Unsplash';
+import FirebaseApp from './firebaseLogin/FirebaseApp';
+
 function App() {
   return (
     <div>
@@ -91,6 +97,7 @@ function App() {
       {/* <MultipleRequest/> */}
       {/* <PageApp/> */}
       {/* <DataInputs/> */}
+      {/* <UserProfile/> */}
       {/* <DataInputsRef/> */}
       {/* <EgImperative/>  */}
       {/* <AppOpti/> */}
@@ -103,7 +110,12 @@ function App() {
       {/* <GraphqlApp/> */}
   {/* <DataFetch/> */}
       {/* <ProtectedComponent/> */}
-      <WeatherApp/>
+      {/* <WeatherApp/> */}
+      {/* <FileTest/> */}
+      {/* <Navbar/> */}
+{/* <MovieApp/> */}
+{/* <Unsplash/> */}
+<FirebaseApp/>
     </div>
   );
 }
